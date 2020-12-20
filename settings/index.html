@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="/homey.js" data-origin="settings"></script>
-    <!--<script src='https://cdn.staticaly.com/gh/robertklep/homey-mocks/v0.0.4/homey-settings-mock.js'></script>-->
+    <!--<script type="text/javascript" src="/homey.js" data-origin="settings"></script>-->
+    <script src='https://cdn.staticaly.com/gh/robertklep/homey-mocks/v0.0.4/homey-settings-mock.js'></script>
     <!--<script src="js/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -31,6 +31,8 @@
                 style="border-top-left-radius: 3px; border-bottom-left-radius: 3px;">Headers</a>
             <!--<a class="nav-item nav-link" id="nav-certificate-tab" data-toggle="tab" href="#nav-certificate" role="tab"
                 aria-controls="nav-certificate" aria-selected="false">Certificates</a>-->
+            <a class="nav-item nav-link" id="nav-authentication-tab" data-toggle="tab" href="#nav-authentication"
+                role="tab" aria-controls="nav-authentication" aria-selected="false">Authentication</a>
             <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
                 aria-controls="nav-contact" aria-selected="false">About</a>
         </div>
@@ -147,6 +149,40 @@
             </div>
 
         </div>-->
+
+        <div class="tab-pane fade" id="nav-authentication" role="tabpanel" aria-labelledby="nav-authentication-tab">
+
+            <div class="card glass" style="margin-top: 10px;">
+                <div class="card-body">
+                    <p class="card-text">If you need to authenticate your request you can set up your authentication here and apply it in the request flow card.</p>
+                </div>
+            </div>
+
+            <div class="card glass" style="margin-top: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">Basic Authentication</h5>
+                </div>
+            </div>
+
+            <div class="card glass" style="margin-top: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">Bearer Token</h5>
+                </div>
+            </div>
+
+            <div class="card glass" style="margin-top: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">OAuth</h5>
+                </div>
+            </div>
+
+            <div class="card glass" style="margin-top: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">JSON Web Token</h5>
+                </div>
+            </div>
+
+        </div>
 
         <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
 
